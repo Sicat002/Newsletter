@@ -1,0 +1,370 @@
+
+/* CSS Reset */
+body, header, nav, main, footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	font-family: 'Times New Roman', Times, serif;
+	background:black;
+}
+
+hr {
+     height: 8px; /* Increase the height for thickness */
+    background: rgba(0, 102, 255, 0.6);
+    box-shadow: 0 0 15px rgba(0, 255, 123, 0.6), 0 0 25px rgba(0, 191, 255, 0.6); /* Glowing shadow */
+    border: 0;
+    z-index: -99;
+}
+/* Header Styles */
+header {
+	display: flex;
+	justify-content: center;
+}
+header .no {
+	font-size: 5em;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+	z-index: 2;
+}
+header .yo{
+        position: relative;
+        font-size: 5em;
+	    font-weight: bold;
+        right: 250px;
+        color: transparent; /* Make text color transparent for gradient effect */
+       background: linear-gradient(135deg,
+            rgba(0, 0, 255, 1),           /* Blue */
+            rgba(0, 255, 255, 1) 25%,     /* Cyan */
+            rgba(75, 0, 130, 1) 50%,       /* Indigo */
+            rgba(128, 0, 255, 1) 75%,      /* Violet */
+            rgba(128, 0, 255, 1)          /* Purple */
+        );
+        -webkit-background-clip: text; /* Clip the background to text */
+        background-clip: text; /* For non-WebKit browsers */
+}
+header .rectangle {
+	margin-top: 50px;
+	border-radius: 10px;
+	width: 600px; /* Width of the rectangle */
+    height: 100px; /* Height of the rectangle */
+    background: linear-gradient(135deg,
+        rgba(0, 255, 123, 0.4),           /* Bright Greenish-Blue */
+        rgba(0, 204, 102, 0.6) 20%,       /* Medium Green */
+        rgba(0, 153, 51, 0.8) 40%,        /* Darker Green */
+        rgba(0, 102, 255, 0.8) 60%,       /* Bright Blue */
+        rgba(0, 51, 204, 0.8) 80%,        /* Darker Blue */
+        rgba(0, 25, 76, 0.8)              /* Very Dark Blue */
+    );
+    box-shadow: 0 0 15px rgba(0, 255, 123, 0.6), 0 0 25px rgba(0, 191, 255, 0.6); /* Glowing shadow */
+}
+header .rectangle, h1 {
+	margin-right: -220px;
+}
+header .rectangle2 {
+    margin-top: 20px; /* Space between .rectangle and .rectangle2 */
+    border-radius: 10px;
+    width: 100px; /* Adjusted width for .rectangle2 */
+    height: 250px; /* Height for a slightly shorter vertical shape */
+   background: linear-gradient(150deg,
+    rgba(200, 0, 0, 0.6) 20%,          /* Darker Red */
+    rgba(255, 0, 0, 0.6) 40%,          /* Bright Red */
+    rgba(255, 0, 128, 0.4) 60%,        /* Pink */
+    rgba(200, 0, 128, 0.6) 80%,        /* Darker Pink */
+    rgba(255, 0, 128, 0.8)             /* Darker Pink instead of Violet */
+);
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.6), 0 0 25px rgba(128, 0, 255, 0.6); /* Glowing shadow */
+}
+
+/* Navigation Bar */
+nav {
+   margin-top: 20px;
+   margin-bottom: 40px;
+   background: linear-gradient(135deg,
+        rgba(200, 0, 0, 0.8),          /* Darker Red */
+        rgba(150, 0, 0, 0.6) 20%,          /* Even Darker Red */
+        rgba(255, 0, 0, 0.6) 40%,          /* Bright Red (Lighter Red) */
+        rgba(0, 102, 255, 0.6) 60%,        /* Bright Blue */
+        rgba(0, 51, 204, 0.6) 80%,              /* Darker Blue */
+        rgba(0, 25, 76, 0.8)                /* Even Darker Blue */
+   );
+
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.4), 0 0 25px rgba(128, 0, 255, 0.4); /* Softer glowing shadow */
+    width: 1020px; /* Fixed width for the navigation bar */
+    padding: 10px;
+   position: relative;
+   left: 225px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav li a {
+    display: block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+}
+
+
+
+
+
+body{
+	position: relative;
+}
+
+/* Vertical lines */
+body::before, body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 8px;
+	background: rgba(0, 102, 255, 0.6);
+    box-shadow: 0 0 15px rgba(0, 255, 123, 0.6), 0 0 25px rgba(0, 191, 255, 0.6); /* Glowing shadow */
+	z-index: -99;
+}
+
+body::before {
+	left: 70px;
+}
+
+body::after {
+	right: 70px;
+}
+
+
+/* Beginning of style rules for meet the team page. */
+
+/* Container for content */
+.teamcontainer {
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+/* Main container style */
+.teamcontainer .lo img,
+.teamcontainer .ti img,
+.teamcontainer .co img,
+.teamcontainer .fa img{
+    float: left;
+    margin: 15px;
+    border: 5px solid rgba(0, 153, 51, 0.8) ;
+	box-shadow: 4px 4px 8px #000000;
+}
+
+/* Style for content divs */
+.teamcontainer .lo .content,
+.teamcontainer .ti .content,
+.teamcontainer .co .content,
+.teamcontainer .fa .content{
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgba(0, 153, 51, 0.8) ;
+}
+
+/* Footer Styles */
+footer {
+
+    text-align: center;
+    color: white;
+
+}
+footer p {
+    font-size: 14px;
+}
+
+/* Clear Floats */
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#heartContainer {
+    position: fixed; /* Keeps the hearts fixed in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through to underlying elements */
+    z-index: -100;
+}
+
+.heart {
+
+    width: 15px; /* Smaller width of the heart */
+    height: 15px; /* Smaller height of the heart */
+    background-color: red;
+    transform: rotate(-45deg);
+    margin: 50px; /* Add some space around the heart */
+   box-shadow:
+    0 0 15px rgba(255, 0, 0, 0.8),   /* Inner red glow */
+    0 0 25px rgba(255, 0, 0, 0.8);   /* Outer red glow */
+    border-radius: 5px; /* Slightly rounded corners */
+    z-index: -100; /* Corrected z-index for proper layering */
+     pointer-events: none; /* Prevent interaction with hearts */
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 15px; /* Same width as the heart */
+    height: 15px; /* Same height as the heart */
+    background-color: red;
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.2), 0 0 25px rgba(128, 0, 255, 0.6); /* Glowing shadow */
+    border-radius: 50%; /* Create rounded shapes */
+    z-index: -50; /* Ensure these are on top of the heart */
+     pointer-events: none; /* Prevent interaction with hearts */
+}
+
+.heart::before {
+    top: -7.5px; /* Position above the heart */
+    left: 0; /* Align left */
+}
+
+.heart::after {
+    left: 7.5px; /* Position right */
+    top: 0; /* Align with the bottom */
+}
+
+#starContainer {
+    position: fixed; /* Keeps the stars fixed in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through to underlying elements */
+    z-index: -100;
+}
+
+.star {
+    width: 40px;
+    height: 40px;
+    background-image: url('star.png'); /* URL to star image */
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px blue;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 50px; /* Space around each star */
+    z-index: -50;
+}
+#moonContainer {
+    position: fixed; /* Keeps the stars fixed in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through to underlying elements */
+    z-index: -100;
+}
+.moon {
+    width: 40px;
+    height: 40px;
+    background-image: url('moon.png'); /* URL to star image */
+    background-size: cover;
+    box-shadow: inset 0px 0px 70px rgba(0, 0, 255, 0.3);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-right: 10px; /* Space around each star */
+    z-index: -50;
+}
+  /* Hide audio figures initially */
+#song1, #song2, #song3, #song4 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Fade-in effect */
+}
+
+/* Styling for each song figure */
+#song1 {
+    background: linear-gradient(135deg,
+        rgba(255, 223, 0, 0.6),        /* Soft Gold */
+        rgba(255, 215, 0, 0.8) 40%,    /* Brighter Gold */
+        rgba(255, 195, 0, 0.8) 60%     /* Golden Yellow */
+    );
+    border: 2px solid #d4af37; /* Gold border */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 370px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 255, 0, 0.6); /* Glowing golden shadow */
+}
+
+#song2 {
+    background: linear-gradient(135deg,
+        rgba(173, 216, 230, 0.6),      /* Light Blue */
+        rgba(70, 130, 180, 0.8) 40%,   /* Steel Blue */
+        rgba(100, 149, 237, 0.8) 60%   /* Cornflower Blue */
+    );
+    border: 2px solid #4682b4; /* Steel blue border */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 370px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 15px rgba(70, 130, 180, 0.8), 0 0 25px rgba(100, 149, 237, 0.6); /* Glowing blue shadow */
+}
+
+#song3 {
+    background: linear-gradient(135deg,
+        rgba(255, 182, 193, 0.6),      /* Light Pink */
+        rgba(255, 105, 180, 0.8) 40%,  /* Hot Pink */
+        rgba(255, 20, 147, 0.8) 60%    /* Deep Pink */
+    );
+    border: 2px solid #cd5c5c; /* Indian red border */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 370px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8), 0 0 25px rgba(255, 20, 147, 0.6); /* Glowing pink shadow */
+}
+
+/* Button styling */
+button {
+    padding: 12px 24px; /* Larger padding for better button appearance */
+    font-size: 18px; /* Larger font size for better readability */
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners for buttons */
+    background: black;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 255, 123, 0.5), 0 0 20px rgba(0, 191, 255, 0.5); /* Glowing shadow */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+    display: block; /* Make button block-level */
+    margin: 0 auto; /* Center the button */
+    margin-top: 10px;
+}
+
+.songContainer {
+     display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 0px; /* Add space between columns */
+    justify-items: center; /* Center items horizontally within each column */
+    margin: 20px 0; /* Margin around the container */
+}
