@@ -96,13 +96,14 @@ nav {
     box-shadow: 0 0 15px rgba(255, 0, 128, 0.4), 0 0 25px rgba(128, 0, 255, 0.4); /* Softer glowing shadow */
     width: 1020px; /* Fixed width for the navigation bar */
     padding: 10px;
-   position: relative;
-   left: 225px;
+     margin-left: auto;
+            margin-right: auto; /* Center the navigation bar */
 }
 
 nav ul {
+     display: flex;
+    justify-content: center;
     list-style-type: none;
-    display: flex;
     padding: 0;
     margin: 0;
 }
